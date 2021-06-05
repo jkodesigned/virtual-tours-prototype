@@ -5,12 +5,12 @@ const iconsKeys = Object.keys(icons) as IconType[];
 
 export function Icons() {
   return (
-    <>
+    <div className={"flex -mb-4 flex flex-wrap max-w-sm"}>
       {iconsKeys.map((icon) => (
         <div key={icon} title={icon} className={"mr-6 mb-4"}>
           <Icon type={icon} />
         </div>
       ))}
-    </>
+    </div>
   );
 }
