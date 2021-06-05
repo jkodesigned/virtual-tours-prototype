@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"Virtual Tours":"Virtual Tours","virtual-tours-prototype":"virtual-tours-prototype"}};

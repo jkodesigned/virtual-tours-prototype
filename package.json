@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lingui:extract": "lingui extract",
+    "lingui:compile": "lingui compile"
   },
   "dependencies": {
     "@lingui/react": "^3.9.0",

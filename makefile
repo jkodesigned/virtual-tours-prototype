@@ -9,3 +9,9 @@ build-prod: ## Create production build
 
 run-prod: ## Run production environment
 	npm run start
+
+trans-extract: ## Extract translations
+	npm run lingui:extract
+
+trans-compile: ## Compile translations
+	npm run lingui:compile
