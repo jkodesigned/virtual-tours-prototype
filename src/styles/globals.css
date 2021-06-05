@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bf-gradient {
+    @apply from-bfg-start to-bfg-stop bg-gradient-to-r;
+  }
+}
