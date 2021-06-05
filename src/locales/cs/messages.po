@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/components/shared/PageHead/PageHead.tsx:9
 msgid "Virtual Tours"
-msgstr ""
+msgstr "Virtuálně Historií"
 
 #: src/pages/index.tsx:4
 msgid "virtual-tours-prototype"
