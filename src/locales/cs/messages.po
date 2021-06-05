@@ -13,11 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/ui/Loading/Loading.tsx:25
+msgid "Loading"
+msgstr "Načítání"
+
 #: src/components/shared/PageHead/PageHead.tsx:9
 #: src/pages/design-system.tsx:9
 msgid "Virtual Tours"
 msgstr "Virtuálně Historií"
 
-#: src/pages/index.tsx:7
+#: src/components/pages/Home/Home.tsx:8
 msgid "virtual-tours"
 msgstr ""

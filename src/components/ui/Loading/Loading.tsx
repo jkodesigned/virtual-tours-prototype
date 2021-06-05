@@ -1,16 +1,20 @@
-import Frame0 from "components/ui/Loading/frames/frame-0.svg";
-import Frame1 from "components/ui/Loading/frames/frame-1.svg";
-import Frame2 from "components/ui/Loading/frames/frame-2.svg";
-import Frame3 from "components/ui/Loading/frames/frame-3.svg";
-import Frame4 from "components/ui/Loading/frames/frame-4.svg";
-import Frame5 from "components/ui/Loading/frames/frame-5.svg";
-import Frame6 from "components/ui/Loading/frames/frame-6.svg";
 import { useState } from "react";
 import { useInterval } from "react-use";
+import { t } from "@lingui/macro";
+import Image from "next/image";
 
 const DELAY = 400; // ms
 
-const frames = [<Frame0 />, <Frame1 />, <Frame2 />, <Frame3 />, <Frame4 />, <Frame5 />, <Frame6 />];
+const frames = [
+  "/images/loading/frame-0.png",
+  "/images/loading/frame-1.png",
+  "/images/loading/frame-2.png",
+  "/images/loading/frame-3.png",
+  "/images/loading/frame-4.png",
+  "/images/loading/frame-5.png",
+  "/images/loading/frame-6.png",
+];
+
 const lastFrame = frames.length - 1;
 
 export function Loading() {
@@ -18,5 +22,5 @@ export function Loading() {
 
   useInterval(() => setFrame((frame) => (frame === lastFrame ? 0 : frame + 1)), DELAY);
 
-  return <div>{frames[frame]}</div>;
+  return <Image src={frames[frame]} alt={t`Loading`} width={120} height={120} />;
 }
