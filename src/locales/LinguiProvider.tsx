@@ -7,7 +7,7 @@ import { messages as en } from "locales/en/messages.js";
 import { messages as cs } from "locales/cs/messages.js";
 import { Locales } from "locales";
 
-// TODO: dynamic imports for messages
+// TODO: Dynamic imports for messages?
 
 i18n.loadLocaleData(Locales.En, { plurals: enPlurals });
 i18n.loadLocaleData(Locales.Cs, { plurals: csPlurals });
