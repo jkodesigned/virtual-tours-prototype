@@ -1,1 +1,1 @@
-/*eslint-disable*/module.exports={messages:{"Virtual Tours":"Virtuálně Historií","virtual-tours-prototype":"virtual-tours-prototype"}};
+/*eslint-disable*/module.exports={messages:{"Virtual Tours":"Virtuálně Historií","virtual-tours":"virtual-tours"}};

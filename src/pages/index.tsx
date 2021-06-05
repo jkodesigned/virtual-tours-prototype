@@ -1,5 +1,5 @@
-import { t } from "@lingui/macro";
+import { Home } from "components/pages";
 
 export default function HomePage() {
-  return <h1 className={"heading-1"}>{t`virtual-tours-prototype`}</h1>;
+  return <Home />;
 }
