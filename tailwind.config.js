@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{ts,tsx,css}"],
@@ -52,6 +54,20 @@ module.exports = {
         start: "#3F5B41",
         stop: "#56855E",
       },
+    },
+    fontFamily: {
+      sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
+      serif: ["Grenze Gotisch", ...defaultTheme.fontFamily.serif],
+    },
+    fontSize: {
+      h1: ["32px", "32px"],
+      h2: ["24px", "22px"],
+      h3: ["18px", "20px"],
+      h4: ["18px", "28px"],
+      h5: ["18px", "28px"],
+      h6: ["14px", "24px"],
+      p1: ["14px", "28px"],
+      p2: ["12px", "24px"],
     },
     extend: {},
   },
