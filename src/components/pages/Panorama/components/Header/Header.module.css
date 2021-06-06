@@ -1,0 +1,23 @@
+.header {
+  @apply p-5;
+}
+
+.back {
+  @apply mb-2.5;
+}
+
+.title {
+  @apply flex items-center justify-between;
+}
+
+.heading {
+  @apply h1 text-sn-50;
+}
+
+.controls {
+  @apply flex items-center;
+}
+
+.controls > button:not(:last-of-type) {
+  @apply mr-5;
+}

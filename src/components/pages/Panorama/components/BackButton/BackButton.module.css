@@ -1,0 +1,13 @@
+.button {
+  @apply flex items-center w-full;
+  @apply text-sn-25;
+  @apply focus:outline-none;
+}
+
+.icon {
+  @apply mr-5 w-5 h-5;
+}
+
+.text {
+  @apply h6;
+}

@@ -69,7 +69,11 @@ module.exports = {
       p1: ["14px", "28px"],
       p2: ["12px", "24px"],
     },
-    extend: {},
+    extend: {
+      borderRadius: {
+        "4xl": "2rem",
+      },
+    },
   },
   variants: {
     extend: {},
