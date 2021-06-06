@@ -1,0 +1,46 @@
+.container {
+  @apply relative flex flex-wrap;
+  width: 120px;
+  height: 120px;
+}
+
+.letter {
+  @apply absolute flex items-center justify-center;
+  @apply text-sn-50 z-10 -mt-0.5 font-serif font-bold;
+  font-size: 64px;
+  line-height: 40px;
+  width: 60px;
+  height: 60px;
+  transition: all 150ms ease;
+}
+
+.box {
+  @apply bg-sn-50 absolute rounded-2xl;
+  width: 60px;
+  height: 60px;
+  transition: all 150ms ease;
+}
+
+.green {
+  @apply text-bf-75;
+}
+
+.topLeft {
+  top: 0;
+  left: 0;
+}
+
+.topRight {
+  top: 0;
+  left: 60px;
+}
+
+.bottomLeft {
+  top: 60px;
+  left: 0;
+}
+
+.bottomRight {
+  top: 60px;
+  left: 60px;
+}
