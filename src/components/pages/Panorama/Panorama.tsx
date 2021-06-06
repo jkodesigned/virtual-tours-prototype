@@ -12,11 +12,15 @@ export function Panorama() {
 
   const [loading, setLoading] = useState(true);
 
+  const onReady = () => {
+    window.setTimeout(() => setLoading(false), 1000);
+  };
+
   return (
     <div className={s.page}>
       <Header parent={mock.castle} title={mock.chamber} />
 
-      <PanoramaViewer onReady={() => setLoading(false)} />
+      <PanoramaViewer onReady={onReady} />
 
       {loading && <LoadingScreen />}
     </div>
