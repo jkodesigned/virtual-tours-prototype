@@ -1,0 +1,7 @@
+.viewer {
+  @apply flex-1;
+}
+
+.viewer > canvas {
+  @apply rounded-t-4xl;
+}

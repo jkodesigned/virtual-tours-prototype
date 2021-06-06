@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Header } from "components/pages/Panorama/components";
+import { LoadingScreen } from "components/shared";
+import { Header, PanoramaViewer } from "components/pages/Panorama/components";
 import s from "components/pages/Panorama/Panorama.module.css";
 
 export function Panorama() {
@@ -15,7 +16,9 @@ export function Panorama() {
     <div className={s.page}>
       <Header parent={mock.castle} title={mock.chamber} />
 
-      <div className={s.viewer} />
+      <PanoramaViewer onReady={() => setLoading(false)} />
+
+      {loading && <LoadingScreen />}
     </div>
   );
 }

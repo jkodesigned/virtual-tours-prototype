@@ -1,7 +1,3 @@
 .page {
   @apply bf-gradient absolute inset-0 flex flex-col;
 }
-
-.viewer {
-  @apply bg-sn-0 rounded-t-4xl flex flex-1 items-center justify-center;
-}
