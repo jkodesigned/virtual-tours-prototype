@@ -1,12 +1,5 @@
-import { t } from "@lingui/macro";
-import { Loading } from "components/ui";
-import s from "components/pages/Home/Home.module.css";
+import { LoadingScreen } from "components/shared";
 
 export function Home() {
-  return (
-    <div className={s.container}>
-      <h1 className={s.heading}>{t`virtual-tours`}</h1>
-      <Loading />
-    </div>
-  );
+  return <LoadingScreen />;
 }

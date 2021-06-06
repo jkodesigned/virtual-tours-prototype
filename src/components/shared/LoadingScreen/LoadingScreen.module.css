@@ -1,0 +1,11 @@
+.container {
+  @apply bf-gradient absolute inset-0 flex flex-col items-center justify-center;
+}
+
+.loading {
+  @apply -mt-8 mb-8;
+}
+
+.info {
+  @apply h5 text-sn-50 w-72 text-center;
+}
