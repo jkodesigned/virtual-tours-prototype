@@ -10,5 +10,5 @@ interface Props extends SVGAttributes<SVGElement> {
 export function Icon({ type, ...props }: Props) {
   const Icon = icons[type];
 
-  return <Icon fill="currentColor" {...props} />;
+  return <Icon fill="currentColor" width="100%" height="100%" {...props} />;
 }
